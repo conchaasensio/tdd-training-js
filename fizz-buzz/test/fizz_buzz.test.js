@@ -41,4 +41,20 @@ describe('FizzBuzz', () => {
 
     expect(fizzBuzzNumbers.length).toBe(100);
   });
+  it('it should return 100 numbers', () => {
+
+    const fizzBuzz = new FizzBuzz();
+
+    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+    expect(fizzBuzzNumbers.length).toBe(100);
+  });
+  it('it should return "Fizz" instead of 3', () => {
+
+    const fizzBuzz = new FizzBuzz();
+
+    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+    expect(fizzBuzzNumbers[2]).toBe('Fizz');
+  });
 });

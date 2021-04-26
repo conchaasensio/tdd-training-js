@@ -2,9 +2,16 @@ class FizzBuzz {
 
     returnNumbers() {
         let numbers = [];
-        for (let index = 0; index < 100; index ++ ) {
+        for (let index = 0; index < 100; index++) {
             const number = index + 1;
-            numbers.push(number.toString());
+
+            if (number === 3) {
+                numbers.push('Fizz');
+            } else {
+
+                numbers.push(number.toString());
+
+            }
         }
         return numbers;
     }
