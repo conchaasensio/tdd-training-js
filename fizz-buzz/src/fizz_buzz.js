@@ -7,6 +7,9 @@ class FizzBuzz {
 
             if (number === 3) {
                 numbers.push('Fizz');
+            } else if (number === 6) {
+                numbers.push('Fizz');
+
             } else {
 
                 numbers.push(number.toString());
