@@ -21,4 +21,9 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.changeThisName(50)).toBe('L');
   });
+  it('converts number 100 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.changeThisName(100)).toBe('C');
+  });
 });

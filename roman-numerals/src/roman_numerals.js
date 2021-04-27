@@ -9,6 +9,8 @@ class RomanNumerals {
       return 'X';
     } else if (number === 50) {
       return 'L';
+    } else if (number === 100) {
+      return 'C';
     }
   }
 }
