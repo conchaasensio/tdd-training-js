@@ -36,4 +36,9 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convert(1000)).toBe('M');
   });
+  it('converts number 2 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convert(2)).toBe('II');
+  });
 });
