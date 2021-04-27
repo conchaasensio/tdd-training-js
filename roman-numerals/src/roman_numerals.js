@@ -14,9 +14,9 @@ class RomanNumerals {
           return romanNumbers[number];
 
       } else if (number === 2){
-          return 'II';
+          return 'I' + this.convert(number - 1);
       } else {
-          return 'III';
+          return 'I' + this.convert(number-1);
       }
 
 
