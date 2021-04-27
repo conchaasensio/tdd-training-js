@@ -41,4 +41,9 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convert(2)).toBe('II');
   });
+  it('converts number 3 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convert(3)).toBe('III');
+  });
 });
