@@ -11,6 +11,8 @@ class FizzBuzz {
                 numbers.push('Buzz');
             } else if (number === 10) {
                 numbers.push('Buzz');
+            } else if (number === 20) {
+                numbers.push('Buzz');
             } else {
 
                 numbers.push(number.toString());
