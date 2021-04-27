@@ -26,4 +26,9 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.changeThisName(100)).toBe('C');
   });
+  it('converts number 500 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.changeThisName(500)).toBe('D');
+  });
 });
