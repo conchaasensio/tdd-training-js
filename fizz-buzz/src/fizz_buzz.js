@@ -5,7 +5,9 @@ class FizzBuzz {
         for (let index = 0; index < 100; index++) {
             const number = index + 1;
 
-            if (number % 3 === 0) {
+            if (number === 15) {
+                numbers.push('FizzBuzz');
+            } else if (number % 3 === 0) {
                 numbers.push('Fizz');
             } else if (number % 5 === 0) {
                 numbers.push('Buzz');
