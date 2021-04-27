@@ -11,4 +11,9 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.changeThisName(5)).toBe('V');
   });
+  it('converts number 10 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.changeThisName(10)).toBe('X');
+  });
 });
