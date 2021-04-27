@@ -7,6 +7,8 @@ class RomanNumerals {
       return 'V';
     } else if (number === 10) {
       return 'X';
+    } else if (number === 50) {
+      return 'L';
     }
   }
 }
