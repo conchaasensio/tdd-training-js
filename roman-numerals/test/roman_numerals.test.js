@@ -4,36 +4,36 @@ describe('Roman Numerals', () => {
   it('converts number 1 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(1)).toBe('I');
+    expect(romanNumerals.convert(1)).toBe('I');
   });
   it('converts number 5 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(5)).toBe('V');
+    expect(romanNumerals.convert(5)).toBe('V');
   });
   it('converts number 10 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(10)).toBe('X');
+    expect(romanNumerals.convert(10)).toBe('X');
   });
   it('converts number 50 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(50)).toBe('L');
+    expect(romanNumerals.convert(50)).toBe('L');
   });
   it('converts number 100 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(100)).toBe('C');
+    expect(romanNumerals.convert(100)).toBe('C');
   });
   it('converts number 500 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(500)).toBe('D');
+    expect(romanNumerals.convert(500)).toBe('D');
   });
   it('converts number 1000 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName(1000)).toBe('M');
+    expect(romanNumerals.convert(1000)).toBe('M');
   });
 });
