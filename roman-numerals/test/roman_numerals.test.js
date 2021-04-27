@@ -31,4 +31,9 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.changeThisName(500)).toBe('D');
   });
+  it('converts number 1000 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.changeThisName(1000)).toBe('M');
+  });
 });

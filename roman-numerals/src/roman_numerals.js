@@ -13,6 +13,8 @@ class RomanNumerals {
       return 'C';
     } else if (number === 500) {
       return 'D';
+    } else if (number === 1000) {
+      return 'M';
     }
   }
 }
