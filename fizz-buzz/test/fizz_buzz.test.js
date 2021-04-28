@@ -153,5 +153,13 @@ describe('FizzBuzz', () => {
 
     expect(fizzBuzzNumbers[51]).toBe('Buzz');
   });
+  it('it should return "Buzz" instead of 58', () => {
+
+    const fizzBuzz = new FizzBuzz();
+
+    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+    expect(fizzBuzzNumbers[57]).toBe('Buzz');
+  });
 
 });
