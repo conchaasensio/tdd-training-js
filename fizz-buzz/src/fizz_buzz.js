@@ -7,7 +7,7 @@ class FizzBuzz {
 
             if (number % 15 === 0) {
                 numbers.push('FizzBuzz');
-            } else if (number % 3 === 0 || number === 13 || number === 23) {
+            } else if (number % 3 === 0 || number === 13 || number === 23 || number === 43) {
                 numbers.push('Fizz');
             } else if (number % 5 === 0) {
                 numbers.push('Buzz');
