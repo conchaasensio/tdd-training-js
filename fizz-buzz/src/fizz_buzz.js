@@ -9,7 +9,7 @@ class FizzBuzz {
                 numbers.push('FizzBuzz');
             } else if (number % 3 === 0 || number.toString().includes('3')) {
                 numbers.push('Fizz');
-            } else if (number % 5 === 0 || number === 52 || number === 58 || number === 59) {
+            } else if (number % 5 === 0 || number.toString().includes('5')) {
                 numbers.push('Buzz');
             } else {
 
