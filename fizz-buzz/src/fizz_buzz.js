@@ -5,11 +5,11 @@ class FizzBuzz {
         for (let index = 0; index < 100; index++) {
             const number = index + 1;
 
-            if (number % 15 === 0 || number === 53 || (number % 3 === 0) && number.toString().includes('5') || (number % 5 === 0) && number.toString().includes('3')) {
+            if (this.isFizz(number)) {
                 numbers.push('FizzBuzz');
-            } else if (number % 3 === 0 || number.toString().includes('3')) {
+            } else if (this.isBuzz(number)) {
                 numbers.push('Fizz');
-            } else if (number % 5 === 0 || number.toString().includes('5')) {
+            } else if (this.isFizzBuzz(number)) {
                 numbers.push('Buzz');
             } else {
 
@@ -20,6 +20,17 @@ class FizzBuzz {
         return numbers;
     }
 
+
+
+    isFizz(number) {
+        return number % 15 === 0 || number === 53 || (number % 3 === 0) && number.toString().includes('5') || (number % 5 === 0) && number.toString().includes('3');
+    }
+    isBuzz(number) {
+        return number % 3 === 0 || number.toString().includes('3');
+    }
+    isFizzBuzz(number) {
+        return number % 5 === 0 || number.toString().includes('5');
+    }
 }
 
 module.exports = FizzBuzz;
