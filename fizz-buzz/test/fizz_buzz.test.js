@@ -42,127 +42,79 @@ describe('FizzBuzz', () => {
     });
     describe('Is Fizz when', () => {
 
-        it('is number 3', () => {
+        it('is multiple of 3', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[2]).toBe('Fizz');
-        });
-        it('is number 6', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[5]).toBe('Fizz');
-        });
-        it('is number 9', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[8]).toBe('Fizz');
+
+
         });
-        it('is number 13', () => {
+        it('contains number 3', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[12]).toBe('Fizz');
-        });
-        it('is number 23', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[22]).toBe('Fizz');
-        });
-        it('is number 43', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[42]).toBe('Fizz');
+
+
         });
 
     });
     describe('Is Buzz when', () => {
 
-        it('is number 5', () => {
+        it('is multiple of 5', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[4]).toBe('Buzz');
-        });
-        it('is number 10', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[9]).toBe('Buzz');
-        });
-        it('is number 20', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[19]).toBe('Buzz');
+
+
         });
-        it('is number 52', () => {
+        it('contains number 5', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[51]).toBe('Buzz');
-        });
-        it('is number 58', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[57]).toBe('Buzz');
-        });
-        it('is number 59', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[58]).toBe('Buzz');
+
+
         });
 
     });
     describe('Is FizzBuzz when', () => {
 
-        it('is number 15', () => {
+        it('is multiple of 15', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[14]).toBe('FizzBuzz');
-        });
-        it('is number 30', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[29]).toBe('FizzBuzz');
-        });
-        it('is number 45', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[44]).toBe('FizzBuzz');
+
+
         });
-        it('is number 35', () => {
+        it('contains numbers 3 and 5', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[34]).toBe('FizzBuzz');
-        });
-        it('is number 53', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[52]).toBe('FizzBuzz');
+
         });
-        it('is number 51', () => {
+        it('is multiple of 3 and contains number 5', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
             expect(fizzBuzzNumbers[50]).toBe('FizzBuzz');
-        });
-        it('is number 54', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
             expect(fizzBuzzNumbers[53]).toBe('FizzBuzz');
+
         });
     });
 
