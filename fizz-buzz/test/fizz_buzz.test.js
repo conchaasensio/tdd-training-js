@@ -1,205 +1,169 @@
 const FizzBuzz = require('../src/fizz_buzz');
 
 describe('FizzBuzz', () => {
-  it('it should return number 1', () => {
+    let fizzBuzz;
+    beforeEach(() => {
+        fizzBuzz = new FizzBuzz();
+    });
 
-    const fizzBuzz = new FizzBuzz();
+    it('it should return more than one number', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+        const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[0]).toBe('1');
-  });
-  it('it should return more than one number', () => {
+        expect(Array.isArray(fizzBuzzNumbers)).toBe(true);
+    });
+    it('it should return 100 numbers', () => {
 
-    const fizzBuzz = new FizzBuzz();
+        const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+        expect(fizzBuzzNumbers.length).toBe(100);
+    });
 
-    expect(Array.isArray(fizzBuzzNumbers)).toBe(true);
-  });
-  it('it should return number 2', () => {
+    describe('Is number when', () => {
 
-    const fizzBuzz = new FizzBuzz();
+        it('is number 1', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[1]).toBe('2');
-  });
-  it('it should return number 4', () => {
+            expect(fizzBuzzNumbers[0]).toBe('1');
+        });
+        it('is number 2', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[1]).toBe('2');
+        });
+        it('is number 4', () => {
 
-    expect(fizzBuzzNumbers[3]).toBe('4');
-  });
-  it('it should return 100 numbers', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[3]).toBe('4');
+        });
+    });
+    describe('Is Fizz when', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+        it('is number 3', () => {
 
-    expect(fizzBuzzNumbers.length).toBe(100);
-  });
-  it('it should return 100 numbers', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[2]).toBe('Fizz');
+        });
+        it('is number 6', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers.length).toBe(100);
-  });
-  it('it should return "Fizz" instead of 3', () => {
+            expect(fizzBuzzNumbers[5]).toBe('Fizz');
+        });
+        it('is number 9', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[8]).toBe('Fizz');
+        });
+        it('is number 13', () => {
 
-    expect(fizzBuzzNumbers[2]).toBe('Fizz');
-  });
-  it('it should return "Fizz" instead of 6', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[12]).toBe('Fizz');
+        });
+        it('is number 23', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[5]).toBe('Fizz');
-  });
-  it('it should return "Fizz" instead of 9', () => {
+            expect(fizzBuzzNumbers[22]).toBe('Fizz');
+        });
+        it('is number 43', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[42]).toBe('Fizz');
+        });
 
-    expect(fizzBuzzNumbers[8]).toBe('Fizz');
-  });
-  it('it should return "Buzz" instead of 5', () => {
+    });
+    describe('Is Buzz when', () => {
 
-    const fizzBuzz = new FizzBuzz();
+        it('is number 5', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[4]).toBe('Buzz');
-  });
-  it('it should return "Buzz" instead of 10', () => {
+            expect(fizzBuzzNumbers[4]).toBe('Buzz');
+        });
+        it('is number 10', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[9]).toBe('Buzz');
+        });
+        it('is number 20', () => {
 
-    expect(fizzBuzzNumbers[9]).toBe('Buzz');
-  });
-  it('it should return "Buzz" instead of 20', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[19]).toBe('Buzz');
+        });
+        it('is number 52', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[19]).toBe('Buzz');
-  });
-  it('it should return "FizzBuzz" instead of 15', () => {
+            expect(fizzBuzzNumbers[51]).toBe('Buzz');
+        });
+        it('is number 58', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[57]).toBe('Buzz');
+        });
+        it('is number 59', () => {
 
-    expect(fizzBuzzNumbers[14]).toBe('FizzBuzz');
-  });
-  it('it should return "FizzBuzz" instead of 30', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[58]).toBe('Buzz');
+        });
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+    });
+    describe('Is FizzBuzz when', () => {
 
-    expect(fizzBuzzNumbers[29]).toBe('FizzBuzz');
-  });
-  it('it should return "FizzBuzz" instead of 45', () => {
+        it('is number 15', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[14]).toBe('FizzBuzz');
+        });
+        it('is number 30', () => {
 
-    expect(fizzBuzzNumbers[44]).toBe('FizzBuzz');
-  });
-  it('it should return "Fizz" instead of 13', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[29]).toBe('FizzBuzz');
+        });
+        it('is number 45', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[12]).toBe('Fizz');
-  });
-  it('it should return "Fizz" instead of 23', () => {
+            expect(fizzBuzzNumbers[44]).toBe('FizzBuzz');
+        });
+        it('is number 35', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[34]).toBe('FizzBuzz');
+        });
+        it('is number 53', () => {
 
-    expect(fizzBuzzNumbers[22]).toBe('Fizz');
-  });
-  it('it should return "Fizz" instead of 43', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzz = new FizzBuzz();
+            expect(fizzBuzzNumbers[52]).toBe('FizzBuzz');
+        });
+        it('is number 51', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[42]).toBe('Fizz');
-  });
-  it('it should return "Buzz" instead of 52', () => {
+            expect(fizzBuzzNumbers[50]).toBe('FizzBuzz');
+        });
+        it('is number 54', () => {
 
-    const fizzBuzz = new FizzBuzz();
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[51]).toBe('Buzz');
-  });
-  it('it should return "Buzz" instead of 58', () => {
-
-    const fizzBuzz = new FizzBuzz();
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[57]).toBe('Buzz');
-  });
-  it('it should return "Buzz" instead of 59', () => {
-
-    const fizzBuzz = new FizzBuzz();
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[58]).toBe('Buzz');
-  });
-  it('it should return "FizzBuzz" instead of 35', () => {
-
-    const fizzBuzz = new FizzBuzz();
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[34]).toBe('FizzBuzz');
-  });
-  it('it should return "FizzBuzz" instead of 53', () => {
-
-    const fizzBuzz = new FizzBuzz();
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[52]).toBe('FizzBuzz');
-  });
-  it('it should return "FizzBuzz" instead of 51', () => {
-
-    const fizzBuzz = new FizzBuzz();
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[50]).toBe('FizzBuzz');
-  });
-  it('it should return "FizzBuzz" instead of 54', () => {
-
-    const fizzBuzz = new FizzBuzz();
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers[53]).toBe('FizzBuzz');
-  });
+            expect(fizzBuzzNumbers[53]).toBe('FizzBuzz');
+        });
+    });
 
 });
