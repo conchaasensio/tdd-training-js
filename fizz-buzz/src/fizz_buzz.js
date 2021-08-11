@@ -9,7 +9,7 @@ class FizzBuzz {
             } else if (this.isFizz(number)) {
                 numbers.push('Fizz');
             } else if (this.isBuzz(number)) {
-            numbers.push('Buzz')
+                numbers.push('Buzz')
             } else {
                 numbers.push(number.toString());
             }
@@ -20,13 +20,31 @@ class FizzBuzz {
     isFizzBuzz(number) {
         return this.isFizz(number) && this.isBuzz(number);
     }
-
-    isBuzz(number) {
-        return number % 5 === 0 || number.toString().includes('5');
+    isFizz(number) {
+        return this.isMultipleOf3(number) || this.includesNumber3(number);
     }
 
-    isFizz(number) {
-        return number % 3 === 0 || number.toString().includes('3');
+
+
+
+    isBuzz(number) {
+        return this.isMultipleOf5(number) || this.includesNumber5(number);
+    }
+
+
+
+    isMultipleOf3(number) {
+        return number % 3 === 0;
+    }
+
+    isMultipleOf5(number) {
+        return number % 5 === 0;
+    }
+    includesNumber3(number) {
+        return number.toString().includes('3');
+    }
+    includesNumber5(number) {
+        return number.toString().includes('5');
     }
 }
 
