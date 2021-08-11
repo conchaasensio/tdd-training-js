@@ -22,25 +22,19 @@ class FizzBuzz {
     }
 
     isFizz(number) {
-        return this.isMultipleOf(number, 3) || this.includesNumber3(number);
+        return this.isMultipleOf(number, 3) || this.includesNumber(number, '3');
     }
 
-
     isBuzz(number) {
-        return this.isMultipleOf(number, 5) || this.includesNumber5(number);
+        return this.isMultipleOf(number, 5) || this.includesNumber(number, '5');
     }
 
     isMultipleOf(number, multiple) {
         return number % multiple === 0;
     }
 
-
-    includesNumber3(number) {
-        return number.toString().includes('3');
-    }
-
-    includesNumber5(number) {
-        return number.toString().includes('5');
+    includesNumber(number, includedNumber) {
+        return number.toString().includes(includedNumber);
     }
 }
 
