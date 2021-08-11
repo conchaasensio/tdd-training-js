@@ -15,8 +15,6 @@ describe('FizzBuzz', () => {
   });
   it('should return 100 numbers', () => {
 
-    const fizzBuzz = new FizzBuzz();
-
     const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
     expect(fizzBuzzNumbers.length).toBe(100);
@@ -68,6 +66,13 @@ describe('FizzBuzz', () => {
       expect(fizzBuzzNumbers[8]).toBe('Fizz');
 
     });
+    it('is number 13', () => {
+
+      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+      expect(fizzBuzzNumbers[12]).toBe('Fizz');
+
+    });
 
   });
   describe('Is Buzz when', ()=> {
@@ -116,10 +121,5 @@ describe('FizzBuzz', () => {
       expect(fizzBuzzNumbers[44]).toBe('FizzBuzz');
 
     });
-
   });
-
-
-
-
 });

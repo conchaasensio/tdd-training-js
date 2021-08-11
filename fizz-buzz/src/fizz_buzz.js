@@ -6,7 +6,7 @@ class FizzBuzz {
 
             if (number %15 === 0) {
                 numbers.push('FizzBuzz');
-            } else if (number %3 === 0) {
+            } else if (number %3 === 0 || number === 13) {
                 numbers.push('Fizz');
             } else if (number %5 === 0) {
             numbers.push('Buzz')
