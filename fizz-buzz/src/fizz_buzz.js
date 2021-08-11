@@ -4,11 +4,11 @@ class FizzBuzz {
         for (let index = 0; index < 100; index ++) {
             const number = index + 1;
 
-            if (number %15 === 0 || number === 35 || number === 53) {
+            if (this.isFizzBuzz(number) ) {
                 numbers.push('FizzBuzz');
-            } else if (number %3 === 0 || number.toString().includes('3')) {
+            } else if (this.isFizz(number)) {
                 numbers.push('Fizz');
-            } else if (number %5 === 0 || number.toString().includes('5')) {
+            } else if (this.isBuzz(number)) {
             numbers.push('Buzz')
             } else {
                 numbers.push(number.toString());
@@ -17,6 +17,17 @@ class FizzBuzz {
         return numbers;
     }
 
+    isFizzBuzz(number) {
+        return this.isFizz(number) && this.isBuzz(number);
+    }
+
+    isBuzz(number) {
+        return number % 5 === 0 || number.toString().includes('5');
+    }
+
+    isFizz(number) {
+        return number % 3 === 0 || number.toString().includes('3');
+    }
 }
 
 module.exports = FizzBuzz;
