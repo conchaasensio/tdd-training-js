@@ -1,10 +1,10 @@
 class FizzBuzz {
     returnNumbers() {
         let numbers = [];
-        for (let index = 0; index < 100; index ++) {
+        for (let index = 0; index < 100; index++) {
             const number = index + 1;
 
-            if (this.isFizzBuzz(number) ) {
+            if (this.isFizzBuzz(number)) {
                 numbers.push('FizzBuzz');
             } else if (this.isFizz(number)) {
                 numbers.push('Fizz');
@@ -20,29 +20,25 @@ class FizzBuzz {
     isFizzBuzz(number) {
         return this.isFizz(number) && this.isBuzz(number);
     }
+
     isFizz(number) {
-        return this.isMultipleOf3(number) || this.includesNumber3(number);
+        return this.isMultipleOf(number, 3) || this.includesNumber3(number);
     }
-
-
 
 
     isBuzz(number) {
-        return this.isMultipleOf5(number) || this.includesNumber5(number);
+        return this.isMultipleOf(number, 5) || this.includesNumber5(number);
+    }
+
+    isMultipleOf(number, multiple) {
+        return number % multiple === 0;
     }
 
 
-
-    isMultipleOf3(number) {
-        return number % 3 === 0;
-    }
-
-    isMultipleOf5(number) {
-        return number % 5 === 0;
-    }
     includesNumber3(number) {
         return number.toString().includes('3');
     }
+
     includesNumber5(number) {
         return number.toString().includes('5');
     }
