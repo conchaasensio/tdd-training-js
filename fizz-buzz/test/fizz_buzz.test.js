@@ -87,16 +87,16 @@ describe('FizzBuzz', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[14]).toBe('FizzBuzz');
-            expect(fizzBuzzNumbers[29]).toBe('FizzBuzz');
-            expect(fizzBuzzNumbers[44]).toBe('FizzBuzz');
+            expect(fizzBuzzNumbers[15-1]).toBe('FizzBuzz');
+            expect(fizzBuzzNumbers[30-1]).toBe('FizzBuzz');
+            expect(fizzBuzzNumbers[45-1]).toBe('FizzBuzz');
         });
 
         it('has a 3 and a 5 in it', () => {
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[34]).toBe('FizzBuzz');
-            expect(fizzBuzzNumbers[52]).toBe('FizzBuzz');
+            expect(fizzBuzzNumbers[35-1]).toBe('FizzBuzz');
+            expect(fizzBuzzNumbers[53-1]).toBe('FizzBuzz');
         });
     });
 });
