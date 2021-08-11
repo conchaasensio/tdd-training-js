@@ -7,7 +7,7 @@ describe('FizzBuzz', () => {
 
     const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers[0]).toBe(1);
+    expect(fizzBuzzNumbers[0]).toBe('1');
 
   });
   it('should return more than one number', () => {
