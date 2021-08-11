@@ -25,21 +25,21 @@ describe('FizzBuzz', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[0]).toBe('1');
+            expect(fizzBuzzNumbers[1-1]).toBe('1');
         });
 
         it('is number 2', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[1]).toBe('2');
+            expect(fizzBuzzNumbers[2-1]).toBe('2');
         });
 
         it('is number 4', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[3]).toBe('4');
+            expect(fizzBuzzNumbers[4-1]).toBe('4');
         });
 
     });
@@ -49,17 +49,17 @@ describe('FizzBuzz', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[2]).toBe('Fizz');
-            expect(fizzBuzzNumbers[5]).toBe('Fizz');
-            expect(fizzBuzzNumbers[8]).toBe('Fizz');
+            expect(fizzBuzzNumbers[3-1]).toBe('Fizz');
+            expect(fizzBuzzNumbers[6-1]).toBe('Fizz');
+            expect(fizzBuzzNumbers[9-1]).toBe('Fizz');
         });
 
         it('has a 3 in it', () => {
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[12]).toBe('Fizz');
-            expect(fizzBuzzNumbers[22]).toBe('Fizz');
-            expect(fizzBuzzNumbers[42]).toBe('Fizz');
+            expect(fizzBuzzNumbers[13-1]).toBe('Fizz');
+            expect(fizzBuzzNumbers[23-1]).toBe('Fizz');
+            expect(fizzBuzzNumbers[43-1]).toBe('Fizz');
         });
     });
 
@@ -68,17 +68,17 @@ describe('FizzBuzz', () => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[4]).toBe('Buzz');
-            expect(fizzBuzzNumbers[9]).toBe('Buzz');
-            expect(fizzBuzzNumbers[19]).toBe('Buzz');
+            expect(fizzBuzzNumbers[5-1]).toBe('Buzz');
+            expect(fizzBuzzNumbers[10-1]).toBe('Buzz');
+            expect(fizzBuzzNumbers[20-1]).toBe('Buzz');
         });
 
         it('has a 5 in it', function () {
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[51]).toBe('Buzz');
-            expect(fizzBuzzNumbers[57]).toBe('Buzz');
-            expect(fizzBuzzNumbers[58]).toBe('Buzz');
+            expect(fizzBuzzNumbers[52-1]).toBe('Buzz');
+            expect(fizzBuzzNumbers[58-1]).toBe('Buzz');
+            expect(fizzBuzzNumbers[59-1]).toBe('Buzz');
         });
     });
 
