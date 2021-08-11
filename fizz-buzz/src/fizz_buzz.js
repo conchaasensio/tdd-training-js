@@ -1,6 +1,6 @@
 class FizzBuzz {
     returnNumbers() {
-        return 1
+        return [1]
     }
 
 }

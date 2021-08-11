@@ -7,7 +7,16 @@ describe('FizzBuzz', () => {
 
     const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(fizzBuzzNumbers).toBe(1);
+    expect(fizzBuzzNumbers[0]).toBe(1);
+
+  });
+  it('should return more than one number', () => {
+
+    const fizzBuzz = new FizzBuzz();
+
+    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+    expect(Array.isArray(fizzBuzzNumbers)).toBe(true);
 
   });
 });
