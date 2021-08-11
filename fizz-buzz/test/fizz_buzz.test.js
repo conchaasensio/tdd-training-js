@@ -73,6 +73,13 @@ describe('FizzBuzz', () => {
       expect(fizzBuzzNumbers[12]).toBe('Fizz');
 
     });
+    it('is number 23', () => {
+
+      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+      expect(fizzBuzzNumbers[22]).toBe('Fizz');
+
+    });
 
   });
   describe('Is Buzz when', ()=> {
