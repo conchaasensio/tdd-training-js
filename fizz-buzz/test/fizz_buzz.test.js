@@ -163,5 +163,12 @@ describe('FizzBuzz', () => {
       expect(fizzBuzzNumbers[44]).toBe('FizzBuzz');
 
     });
+    it('is number 53', () => {
+
+      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+      expect(fizzBuzzNumbers[52]).toBe('FizzBuzz');
+
+    });
   });
 });
