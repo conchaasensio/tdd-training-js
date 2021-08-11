@@ -1,6 +1,11 @@
 class FizzBuzz {
     returnNumbers() {
-        return ['1', '2', '4']
+        let numbers = [];
+        for (let index = 0; index < 100; index ++) {
+            const number = index + 1;
+            numbers.push(number.toString());
+        }
+        return numbers;
     }
 
 }
