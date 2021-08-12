@@ -6,4 +6,10 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(1)).toBe('I');
   });
+
+  it('converts number 5 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(5)).toBe('V');
+  });
 });
