@@ -12,4 +12,11 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(5)).toBe('V');
   });
+
+  it('converts number 10 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(10)).toBe('X');
+  });
+
 });
