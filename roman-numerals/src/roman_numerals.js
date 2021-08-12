@@ -20,11 +20,7 @@ class RomanNumerals {
       return this.convertNumerals(number - 1) + 'I';
     } else if (number === 9) {
       return 'IX';
-    } else if (number === 11) {
-      return this.convertNumerals(number - 1) + 'I';
-    } else if (number === 12) {
-      return this.convertNumerals(number - 1) + 'I';
-    } else {
+    } else if (number >= 11 && number < 14) {
       return this.convertNumerals(number - 1) + 'I';
     }
   }
