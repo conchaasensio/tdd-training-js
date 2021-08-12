@@ -1,9 +1,9 @@
 let RomanNumerals = require('../src/roman_numerals');
 
 describe('Roman Numerals', () => {
-  it('change_this_name', () => {
+  it('converts number 1 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.changeThisName()).toBe(true);
+    expect(romanNumerals.convertNumerals(1)).toBe('I');
   });
 });
