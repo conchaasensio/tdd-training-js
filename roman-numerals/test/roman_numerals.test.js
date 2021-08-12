@@ -79,4 +79,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(4)).toBe('IV');
   });
 
+  it('converts number 9 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(9)).toBe('IX');
+  });
+
 });

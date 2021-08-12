@@ -18,6 +18,8 @@ class RomanNumerals {
       return 'IV'
     } else if (number >= 6 && number <= 8) {
       return this.convertNumerals(number - 1) + 'I'
+    } else {
+      return 'IX'
     }
   }
 }
