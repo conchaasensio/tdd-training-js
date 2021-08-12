@@ -65,6 +65,12 @@ describe('Roman Numerals', () => {
     let romanNumerals = new RomanNumerals();
 
     expect(romanNumerals.convertNumerals(7)).toBe('VII');
+  })
+
+  it('converts number 8 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(8)).toBe('VIII');
   });
 
 });

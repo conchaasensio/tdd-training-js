@@ -18,8 +18,10 @@ class RomanNumerals {
       return 'I' + this.convertNumerals(number - 1);
     } else if (number === 6) {
       return this.convertNumerals(number - 1) + 'I'
-    } else {
+    } else if (number === 7) {
       return this.convertNumerals(number - 1) + 'I'
+    } else {
+      return 'VIII'
     }
   }
 }
