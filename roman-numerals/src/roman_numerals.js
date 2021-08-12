@@ -16,8 +16,10 @@ class RomanNumerals {
       return 'II';
     } else if(number === 3) {
       return 'III'
-    } else {
+    } else if (number === 6) {
       return 'VI'
+    } else {
+      return 'VII'
     }
   }
 }

@@ -61,4 +61,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(6)).toBe('VI');
   });
 
+  it('converts number 7 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(7)).toBe('VII');
+  });
+
 });
