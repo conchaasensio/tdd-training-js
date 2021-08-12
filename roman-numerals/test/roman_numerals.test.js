@@ -91,4 +91,16 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(11)).toBe('XI');
   });
 
+  it('converts number 12 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(12)).toBe('XII');
+  });
+
+  it('converts number 13 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(13)).toBe('XIII');
+  });
+
 });

@@ -8,20 +8,24 @@ class RomanNumerals {
       100: 'C',
       500: 'D',
       1000: 'M'
-    }
+    };
 
     if (romanNumerals[number] !== undefined) {
       return romanNumerals[number];
     } else if (number >= 2 && number < 4) {
       return 'I' + this.convertNumerals(number - 1);
     } else if (number === 4) {
-      return 'IV'
+      return 'IV';
     } else if (number >= 6 && number <= 8) {
-      return this.convertNumerals(number - 1) + 'I'
+      return this.convertNumerals(number - 1) + 'I';
     } else if (number === 9) {
-      return 'IX'
-    } else {
+      return 'IX';
+    } else if (number === 11) {
       return 'XI';
+    } else if (number === 12) {
+      return 'XII';
+    } else {
+      return 'XIII';
     }
   }
 }
