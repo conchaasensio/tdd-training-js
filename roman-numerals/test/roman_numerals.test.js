@@ -25,4 +25,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(50)).toBe('L');
   });
 
+  it('converts number 100 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(100)).toBe('C');
+  });
+
 });
