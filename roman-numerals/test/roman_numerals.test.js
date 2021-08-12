@@ -43,4 +43,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(1000)).toBe('M');
   });
 
+  it('converts number 2 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(2)).toBe('II');
+  });
+
 });

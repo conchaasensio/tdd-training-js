@@ -10,8 +10,13 @@ class RomanNumerals {
       1000: 'M'
     }
 
-    return romanNumerals[number];
+    if (romanNumerals[number] !== undefined) {
+      return romanNumerals[number];
+    }
 
+    else {
+      return 'II'
+    }
   }
 }
 
