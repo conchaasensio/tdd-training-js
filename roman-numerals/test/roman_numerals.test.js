@@ -85,4 +85,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(9)).toBe('IX');
   });
 
+  it('converts number 11 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(11)).toBe('XI');
+  });
+
 });
