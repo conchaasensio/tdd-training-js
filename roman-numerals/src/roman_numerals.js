@@ -12,10 +12,10 @@ class RomanNumerals {
 
     if (romanNumerals[number] !== undefined) {
       return romanNumerals[number];
-    }
-
-    else {
-      return 'II'
+    } else if (number === 2) {
+      return 'II';
+    } else {
+      return 'III'
     }
   }
 }

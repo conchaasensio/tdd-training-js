@@ -49,4 +49,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(2)).toBe('II');
   });
 
+  it('converts number 3 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(3)).toBe('III');
+  });
+
 });
