@@ -19,4 +19,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(10)).toBe('X');
   });
 
+  it('converts number 50 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(50)).toBe('L');
+  });
+
 });
