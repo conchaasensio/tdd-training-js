@@ -13,13 +13,13 @@ class RomanNumerals {
     if (romanNumerals[number] !== undefined) {
       return romanNumerals[number];
     } else if (number === 2) {
-      return 'II';
+      return 'I' + this.convertNumerals(number - 1);
     } else if(number === 3) {
-      return 'III'
+      return 'I' + this.convertNumerals(number - 1);
     } else if (number === 6) {
-      return 'VI'
+      return this.convertNumerals(number - 1) + 'I'
     } else {
-      return 'VII'
+      return this.convertNumerals(number - 1) + 'I'
     }
   }
 }
