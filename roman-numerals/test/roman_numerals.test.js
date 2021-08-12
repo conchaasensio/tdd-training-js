@@ -73,4 +73,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(8)).toBe('VIII');
   });
 
+  it('converts number 4 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(4)).toBe('IV');
+  });
+
 });

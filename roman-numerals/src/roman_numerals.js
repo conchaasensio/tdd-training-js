@@ -14,6 +14,8 @@ class RomanNumerals {
       return romanNumerals[number];
     } else if (number >= 2 && number < 4) {
       return 'I' + this.convertNumerals(number - 1);
+    } else if (number === 4) {
+      return 'IV'
     } else if (number >= 6 && number <= 8) {
       return this.convertNumerals(number - 1) + 'I'
     }
