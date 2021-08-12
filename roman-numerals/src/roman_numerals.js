@@ -16,13 +16,10 @@ class RomanNumerals {
       return romanNumerals[number];
     }
     let decimalNumber = Object.keys(romanNumerals);
-
-    if (number > decimalNumber[0] && number < decimalNumber[1]) {
-      return this.convertNumerals(number - 1) + 'I' ;
-    } else if (number > 5 && number < 9) {
-      return this.convertNumerals(number - 1) + 'I';
-    } else if (number > 10 && number < 50) {
-      return this.convertNumerals(number - 1) + 'I';
+    for (let i = 0; i < decimalNumber.length ; i++) {
+      if (number > decimalNumber[i] && number < decimalNumber[i+1]) {
+        return this.convertNumerals(number - 1) + 'I' ;
+      }
     }
   }
 }
