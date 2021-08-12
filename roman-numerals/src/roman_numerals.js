@@ -15,7 +15,9 @@ class RomanNumerals {
     if (romanNumerals[number] !== undefined) {
       return romanNumerals[number];
     }
-    if (number > 1 && number < 4) {
+    let decimalNumber = Object.keys(romanNumerals);
+
+    if (number > decimalNumber[0] && number < decimalNumber[1]) {
       return this.convertNumerals(number - 1) + 'I' ;
     } else if (number > 5 && number < 9) {
       return this.convertNumerals(number - 1) + 'I';
