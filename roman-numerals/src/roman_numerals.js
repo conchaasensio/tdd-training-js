@@ -21,11 +21,11 @@ class RomanNumerals {
     } else if (number === 9) {
       return 'IX';
     } else if (number === 11) {
-      return 'XI';
+      return this.convertNumerals(number - 1) + 'I';
     } else if (number === 12) {
-      return 'XII';
+      return this.convertNumerals(number - 1) + 'I';
     } else {
-      return 'XIII';
+      return this.convertNumerals(number - 1) + 'I';
     }
   }
 }
