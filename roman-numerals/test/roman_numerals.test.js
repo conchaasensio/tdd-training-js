@@ -55,4 +55,10 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(3)).toBe('III');
   });
 
+  it('converts number 6 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(6)).toBe('VI');
+  });
+
 });

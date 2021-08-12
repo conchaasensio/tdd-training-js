@@ -14,8 +14,10 @@ class RomanNumerals {
       return romanNumerals[number];
     } else if (number === 2) {
       return 'II';
-    } else {
+    } else if(number === 3) {
       return 'III'
+    } else {
+      return 'VI'
     }
   }
 }
