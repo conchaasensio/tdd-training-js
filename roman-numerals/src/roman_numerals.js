@@ -10,6 +10,8 @@ class RomanNumerals {
       return 'L';
     } else if (number === 100) {
       return 'C';
+    } else if (number === 500) {
+      return 'D';
     }
   }
 }
