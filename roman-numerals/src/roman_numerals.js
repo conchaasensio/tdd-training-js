@@ -2,7 +2,9 @@ class RomanNumerals {
   convertNumerals(number) {
     let romanNumerals = {
       1: 'I',
+      4: 'IV',
       5: 'V',
+      9: 'IX',
       10: 'X',
       50: 'L',
       100: 'C',
@@ -12,15 +14,12 @@ class RomanNumerals {
 
     if (romanNumerals[number] !== undefined) {
       return romanNumerals[number];
-    } else if (number >= 2 && number < 4) {
-      return 'I' + this.convertNumerals(number - 1);
-    } else if (number === 4) {
-      return 'IV';
-    } else if (number >= 6 && number <= 8) {
+    }
+    if (number > 1 && number < 4) {
+      return this.convertNumerals(number - 1) + 'I' ;
+    } else if (number > 5 && number < 9) {
       return this.convertNumerals(number - 1) + 'I';
-    } else if (number === 9) {
-      return 'IX';
-    } else if (number >= 11 && number < 14) {
+    } else if (number > 10 && number < 50) {
       return this.convertNumerals(number - 1) + 'I';
     }
   }
