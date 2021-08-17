@@ -103,4 +103,15 @@ describe('Roman Numerals', () => {
     expect(romanNumerals.convertNumerals(13)).toBe('XIII');
   });
 
+  it('converts number 15 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(15)).toBe('XV');
+  });
+  it('converts number 40 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(40)).toBe('XL');
+  });
+
 });

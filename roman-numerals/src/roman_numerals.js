@@ -6,6 +6,7 @@ class RomanNumerals {
       5: 'V',
       9: 'IX',
       10: 'X',
+      40: 'XL',
       50: 'L',
       100: 'C',
       500: 'D',
@@ -18,7 +19,7 @@ class RomanNumerals {
     let decimalNumber = Object.keys(romanNumerals);
     for (let i = 0; i < decimalNumber.length ; i++) {
       if (number > decimalNumber[i] && number < decimalNumber[i+1]) {
-        return this.convertNumerals(number - 1) + 'I' ;
+        return this.convertNumerals(decimalNumber[i]) + this.convertNumerals(number - decimalNumber[i]);
       }
     }
   }
