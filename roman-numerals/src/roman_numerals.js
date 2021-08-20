@@ -23,8 +23,7 @@ class RomanNumerals {
     for (let i = 0; i < decimalNumber.length ; i++) {
       if (number > decimalNumber[i] && number < decimalNumber[i+1]) {
         return this.convertNumerals(decimalNumber[i]) + this.convertNumerals(number - decimalNumber[i]);
-      }
-      if (number > decimalNumber[10]) {
+      }if (number > decimalNumber[12]) {
         return this.convertNumerals(decimalNumber[12]) + this.convertNumerals(number - decimalNumber[12]);
       }
     }
