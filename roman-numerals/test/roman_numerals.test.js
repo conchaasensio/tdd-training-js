@@ -118,15 +118,10 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(90)).toBe('XC');
   });
-  it('converts number 400 to Roman Numeral', () => {
+  it('converts number 1001 to Roman Numeral', () => {
     let romanNumerals = new RomanNumerals();
 
-    expect(romanNumerals.convertNumerals(400)).toBe('CD');
-  });
-  it('converts number 900 to Roman Numeral', () => {
-    let romanNumerals = new RomanNumerals();
-
-    expect(romanNumerals.convertNumerals(900)).toBe('CM');
+    expect(romanNumerals.convertNumerals(1001)).toBe('MI');
   });
 
 });

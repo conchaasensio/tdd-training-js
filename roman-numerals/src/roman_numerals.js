@@ -24,6 +24,9 @@ class RomanNumerals {
       if (number > decimalNumber[i] && number < decimalNumber[i+1]) {
         return this.convertNumerals(decimalNumber[i]) + this.convertNumerals(number - decimalNumber[i]);
       }
+      if (number > decimalNumber[10]) {
+        return this.convertNumerals(decimalNumber[12]) + this.convertNumerals(number - decimalNumber[12]);
+      }
     }
   }
 }
