@@ -123,5 +123,10 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(400)).toBe('CD');
   });
+  it('converts number 900 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(900)).toBe('CM');
+  });
 
 });
