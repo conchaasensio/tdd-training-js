@@ -118,5 +118,10 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(90)).toBe('XC');
   });
+  it('converts number 400 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(400)).toBe('CD');
+  });
 
 });
