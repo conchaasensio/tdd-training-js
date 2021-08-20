@@ -128,5 +128,15 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(900)).toBe('CM');
   });
+  it('converts number 1001 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(1001)).toBe('MI');
+  });
+  it('converts number 3999 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(3999)).toBe('MMMCMXCIX');
+  });
 
 });
