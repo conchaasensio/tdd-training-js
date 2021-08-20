@@ -113,5 +113,10 @@ describe('Roman Numerals', () => {
 
     expect(romanNumerals.convertNumerals(40)).toBe('XL');
   });
+  it('converts number 90 to Roman Numeral', () => {
+    let romanNumerals = new RomanNumerals();
+
+    expect(romanNumerals.convertNumerals(90)).toBe('XC');
+  });
 
 });
