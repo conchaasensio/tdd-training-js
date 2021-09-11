@@ -8,4 +8,11 @@ describe('Password validator', () => {
 
     expect(isValid).toBe(true);
   });
+  it('is not valid when contains less than 8 characters', () => {
+    let passwordValidator = new PasswordValidator();
+
+    let isValid = passwordValidator.isValid('aaaaaaaa')
+
+    expect(isValid).toBe(false);
+  });
 });

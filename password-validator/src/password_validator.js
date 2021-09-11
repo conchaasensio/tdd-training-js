@@ -1,6 +1,6 @@
 class PasswordValidator {
   isValid(password) {
-    return true;
+    return password.length > 8;
   }
 }
 
