@@ -1,9 +1,11 @@
 let PasswordValidator = require('../src/password_validator');
 
 describe('Password validator', () => {
-  it('change_this_name', () => {
+  it('is valid when contains more than 8 characters', () => {
     let passwordValidator = new PasswordValidator();
 
-    expect(passwordValidator.changeThisName()).toBe(true);
+    let isValid = passwordValidator.isValid('aaaaaaaaa')
+
+    expect(isValid).toBe(true);
   });
 });

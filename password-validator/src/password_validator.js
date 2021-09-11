@@ -1,5 +1,5 @@
 class PasswordValidator {
-  changeThisName() {
+  isValid(password) {
     return true;
   }
 }
