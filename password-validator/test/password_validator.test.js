@@ -18,8 +18,8 @@ describe('Password validator', () => {
   it('is valid when contains at least a capital letter', () => {
     let passwordValidator = new PasswordValidator();
 
-    let isValid = passwordValidator.isValid('aaaaaaaaA')
+    let isValid = passwordValidator.isValid('aaaaaaaaa')
 
-    expect(isValid).toBe(true);
+    expect(isValid).toBe(false);
   });
 });
