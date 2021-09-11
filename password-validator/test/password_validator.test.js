@@ -4,7 +4,7 @@ describe('Password validator', () => {
   it('is valid when contains more than 8 characters', () => {
     let passwordValidator = new PasswordValidator();
 
-    let isValid = passwordValidator.isValid('aaaaaaaaA3')
+    let isValid = passwordValidator.isValid('aaaaaaaaA3_')
 
     expect(isValid).toBe(true);
   });
@@ -40,6 +40,13 @@ describe('Password validator', () => {
     let passwordValidator = new PasswordValidator();
 
     let isValid = passwordValidator.isValid('aaaaaaaa')
+
+    expect(isValid).toBe(false);
+  });
+  it('is valid when contains an underscore', () => {
+    let passwordValidator = new PasswordValidator();
+
+    let isValid = passwordValidator.isValid('aaaaaaa_')
 
     expect(isValid).toBe(false);
   });
