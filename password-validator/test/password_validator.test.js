@@ -4,7 +4,7 @@ describe('Password validator', () => {
   it('is valid when contains more than 8 characters', () => {
     let passwordValidator = new PasswordValidator();
 
-    let isValid = passwordValidator.isValid('aaaaaaaaa')
+    let isValid = passwordValidator.isValid('aaaaaaaaA')
 
     expect(isValid).toBe(true);
   });
@@ -14,5 +14,12 @@ describe('Password validator', () => {
     let isValid = passwordValidator.isValid('aaaaaaaa')
 
     expect(isValid).toBe(false);
+  });
+  it('is valid when contains at least a capital letter', () => {
+    let passwordValidator = new PasswordValidator();
+
+    let isValid = passwordValidator.isValid('aaaaaaaaA')
+
+    expect(isValid).toBe(true);
   });
 });
