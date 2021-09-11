@@ -1,52 +1,38 @@
 let PasswordValidator = require('../src/password_validator');
 
 describe('Password validator', () => {
-  it('is valid when contains more than 8 characters', () => {
-    let passwordValidator = new PasswordValidator();
+  let passwordValidator;
+  beforeEach(() => {
+    passwordValidator = new PasswordValidator();
+  })
 
-    let isValid = passwordValidator.isValid('aaaaaaaaA3_')
+  it('is valid when contains all the rules', () => {
+    let isValid = passwordValidator.isValid('a-------A3_')
 
     expect(isValid).toBe(true);
   });
   it('is not valid when contains less than 8 characters', () => {
-    let passwordValidator = new PasswordValidator();
-
-    let isValid = passwordValidator.isValid('aaaaaaaa')
+    let isValid = passwordValidator.isValid('a----A3_')
 
     expect(isValid).toBe(false);
   });
   it('is valid when contains at least a capital letter', () => {
-    let passwordValidator = new PasswordValidator();
-
-    let isValid = passwordValidator.isValid('aaaaaaaaa')
+    let isValid = passwordValidator.isValid('a-------3_')
 
     expect(isValid).toBe(false);
   });
   it('is valid when contains at least a lowercase', () => {
-    let passwordValidator = new PasswordValidator();
-
-    let isValid = passwordValidator.isValid('AAAAAAAAA')
+    let isValid = passwordValidator.isValid('A------3_')
 
     expect(isValid).toBe(false);
   });
   it('is valid when contains a number', () => {
-    let passwordValidator = new PasswordValidator();
-
-    let isValid = passwordValidator.isValid('aaaaaaaa')
-
-    expect(isValid).toBe(false);
-  });
-  it('is valid when contains a number', () => {
-    let passwordValidator = new PasswordValidator();
-
-    let isValid = passwordValidator.isValid('aaaaaaaa')
+    let isValid = passwordValidator.isValid('a------A_')
 
     expect(isValid).toBe(false);
   });
   it('is valid when contains an underscore', () => {
-    let passwordValidator = new PasswordValidator();
-
-    let isValid = passwordValidator.isValid('aaaaaaa_')
+    let isValid = passwordValidator.isValid('a-----A-3')
 
     expect(isValid).toBe(false);
   });
