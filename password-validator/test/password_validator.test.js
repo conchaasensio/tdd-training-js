@@ -22,4 +22,11 @@ describe('Password validator', () => {
 
     expect(isValid).toBe(false);
   });
+  it('is valid when contains at least a lowercase', () => {
+    let passwordValidator = new PasswordValidator();
+
+    let isValid = passwordValidator.isValid('AAAAAAAAA')
+
+    expect(isValid).toBe(false);
+  });
 });
