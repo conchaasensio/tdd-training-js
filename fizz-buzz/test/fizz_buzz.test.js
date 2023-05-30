@@ -1,10 +1,12 @@
 const FizzBuzz = require('../src/fizz_buzz');
 
 describe('FizzBuzz', () => {
-  it('change_this_name', () => {
+  it('should return more than one number', () => {
 
-    new FizzBuzz();
+    const fizzBuzz = new FizzBuzz();
 
-    expect(true).toBe(true);
+    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+    expect(Array.isArray(fizzBuzzNumbers)).toBe(true);
   });
 });
