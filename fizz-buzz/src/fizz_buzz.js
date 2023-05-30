@@ -7,7 +7,7 @@ class FizzBuzz {
         for (let index = 0; index < 100; index ++) {
             const number = index + 1;
 
-            if (number === 3 || number === 6) {
+            if (number === 3 || number === 6 || number === 9) {
                 numbers.push('Fizz')
             } else {
             numbers.push(number.toString())
