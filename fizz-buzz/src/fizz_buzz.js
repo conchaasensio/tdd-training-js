@@ -1,7 +1,7 @@
 class FizzBuzz {
 
     returnNumbers() {
-        return [];
+        return ['1'];
     }
 
 }
