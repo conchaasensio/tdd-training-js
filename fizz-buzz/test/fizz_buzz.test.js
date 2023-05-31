@@ -1,92 +1,85 @@
+
 const FizzBuzz = require('../src/fizz_buzz');
-
 describe('FizzBuzz', () => {
-  let fizzBuzz;
-  beforeEach(() => {
-    fizzBuzz = new FizzBuzz();
-  })
-  it('should return more than one number', () => {
+    let fizzBuzz;
+    beforeEach(() => {
+        fizzBuzz = new FizzBuzz();
+    })
+    it('should return more than one number', () => {
 
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+        const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    expect(Array.isArray(fizzBuzzNumbers)).toBe(true);
-  });
-
-  it('should return 100 elements', () => {
-
-    const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-    expect(fizzBuzzNumbers.length).toBe(100);
-  });
-
-  describe('FizzBuzz is a number when', () => {
-    it('returns number 1', () => {
-
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-      expect(fizzBuzzNumbers[0]).toBe('1');
+        expect(Array.isArray(fizzBuzzNumbers)).toBe(true);
     });
 
-    it('it returns number 2', () => {
+    it('should return 100 elements', () => {
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+        const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-      expect(fizzBuzzNumbers[1]).toBe('2');
+        expect(fizzBuzzNumbers.length).toBe(100);
     });
 
-    it('returns number 4', () => {
+    describe('FizzBuzz is a number when', () => {
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+        const numbers = [
+            [0, '1'],
+            [1, '2'],
+            [3, '4']
+        ];
 
-      expect(fizzBuzzNumbers[3]).toBe('4');
-    });
-  })
+        it.each(numbers)('returns number %s', (position, number) => {
 
-  describe('FizzBuzz is Fizz when', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-    it('returns Fizz instead of 3', () => {
+            expect(fizzBuzzNumbers[position]).toBe(number);
+        });
+    })
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+    describe('FizzBuzz is Fizz when', () => {
 
-      expect(fizzBuzzNumbers[2]).toBe('Fizz');
-    });
+        it('returns Fizz instead of 3', () => {
 
-    it('returns Fizz instead of 6', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[2]).toBe('Fizz');
+        });
 
-      expect(fizzBuzzNumbers[5]).toBe('Fizz');
-    });
+        it('returns Fizz instead of 6', () => {
 
-    it('returns Fizz instead of 9', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[5]).toBe('Fizz');
+        });
 
-      expect(fizzBuzzNumbers[8]).toBe('Fizz');
-    });
-  })
+        it('returns Fizz instead of 9', () => {
 
-  describe('FizzBuzz is Buzz when', () => {
-    it('returns Buzz instead of 5', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[8]).toBe('Fizz');
+        });
+    })
 
-      expect(fizzBuzzNumbers[4]).toBe('Buzz');
+    describe('FizzBuzz is Buzz when', () => {
+        it('returns Buzz instead of 5', () => {
 
-    });
-    it('returns Buzz instead of 10', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[4]).toBe('Buzz');
 
-      expect(fizzBuzzNumbers[9]).toBe('Buzz');
+        });
+        it('returns Buzz instead of 10', () => {
 
-    });
-    it('returns Buzz instead of 20', () => {
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+            expect(fizzBuzzNumbers[9]).toBe('Buzz');
 
-      expect(fizzBuzzNumbers[19]).toBe('Buzz');
+        });
+        it('returns Buzz instead of 20', () => {
 
-    });
-  })
+            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
+
+            expect(fizzBuzzNumbers[19]).toBe('Buzz');
+
+        });
+    })
 });
