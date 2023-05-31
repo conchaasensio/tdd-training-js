@@ -9,10 +9,8 @@ class FizzBuzz {
 
             if (number % 3 === 0) {
                 numbers.push('Fizz')
-            } else if (number === 5) {
+            } else if (number === 5 || number === 10) {
                 numbers.push('Buzz')
-
-
             } else {
                 numbers.push(number.toString())
             }
