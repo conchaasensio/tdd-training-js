@@ -37,26 +37,20 @@ describe('FizzBuzz', () => {
 
     describe('FizzBuzz is Fizz when', () => {
 
-        it('returns Fizz instead of 3', () => {
+        const word = [
+            [3],
+            [6],
+            [9]
+        ]
+
+        it.each(word)('returns Fizz instead of %s', (number) => {
 
             const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
-            expect(fizzBuzzNumbers[2]).toBe('Fizz');
+            let position = number-1;
+            expect(fizzBuzzNumbers[position]).toBe('Fizz');
         });
 
-        it('returns Fizz instead of 6', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-            expect(fizzBuzzNumbers[5]).toBe('Fizz');
-        });
-
-        it('returns Fizz instead of 9', () => {
-
-            const fizzBuzzNumbers = fizzBuzz.returnNumbers();
-
-            expect(fizzBuzzNumbers[8]).toBe('Fizz');
-        });
     })
 
     describe('FizzBuzz is Buzz when', () => {
