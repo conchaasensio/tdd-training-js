@@ -4,13 +4,13 @@ class FizzBuzz {
 
         let numbers = [];
 
-        for (let index = 0; index < 100; index ++) {
+        for (let index = 0; index < 100; index++) {
             const number = index + 1;
 
-            if (number %3 === 0) {
+            if (number % 3 === 0) {
                 numbers.push('Fizz')
             } else {
-            numbers.push(number.toString())
+                numbers.push(number.toString())
             }
         }
 
