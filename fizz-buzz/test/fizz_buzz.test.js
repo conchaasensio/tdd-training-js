@@ -66,7 +66,13 @@ describe('FizzBuzz', () => {
     });
   })
 
+  describe('FizzBuzz is Buzz when', () => {
+    it('returns Buzz instead of 5', () => {
 
+      const fizzBuzzNumbers = fizzBuzz.returnNumbers();
 
+      expect(fizzBuzzNumbers[4]).toBe('Buzz');
 
+    });
+  })
 });
